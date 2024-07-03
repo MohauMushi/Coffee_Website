@@ -1,0 +1,135 @@
+.navbar {
+  background-color: #590004;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ee9b00;
+}
+
+.nav-links a.active {
+  color: #ee9b00;
+  /* text-align: center; */
+  /* background-color: #ee9b00; */
+  /* border-radius: 2rem; */
+  /* width: 5rem; */
+  /* height: 2rem; */
+  
+}
+
+.menu-icon-container {
+  display: none;
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger {
+  display: block;
+  width: 1.5rem;
+  height: 0.125rem;
+  margin-right: 1rem;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 0.125rem;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+  transform: translateY(-0.5rem);
+}
+
+.hamburger::after {
+  transform: translateY(0.5rem);
+}
+
+.hamburger.open {
+  background-color: transparent;
+}
+
+.hamburger.open::before {
+  transform: rotate(45deg);
+}
+
+.hamburger.open::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 0 0 2rem 2rem;
+    background-color: #6e0e0a;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon-container {
+    display: block;
+  }
+}
