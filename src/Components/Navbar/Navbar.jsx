@@ -17,39 +17,12 @@ const Navbar = () => {
         </div>
 
         <div className={`nav-links ${isNavOpen ? "show" : ""}`}>
-          <a href="#home" className={({ isActive }) => (isActive ? "active" : "")}>
-            Home
-          </a>
-          <a
-            href="#about"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            About
-          </a>
-          <a
-            href="#services"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Services
-          </a>
-          <a
-            href="#why-us"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Why Us
-          </a>
-          <a
-            href="#gallery"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Gallery
-          </a>
-          <a
-            href="#contact"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Contact
-          </a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
         </div>
 
         <div className="menu-icon-container">
