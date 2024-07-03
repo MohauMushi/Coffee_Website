@@ -1,24 +1,17 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Layout from './Components/Layout/Layout'
-import HomePage from './Components/Home/Home'
-import './App.css'
+import React from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import HomePage from "./Components/Home/Home";
+import "./App.css";
 
 function App() {
-
-
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout/>}>
-        <Route path='/' element={<HomePage/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
-      
+      <div className="App">
+        <Navbar />
+        <HomePage />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
