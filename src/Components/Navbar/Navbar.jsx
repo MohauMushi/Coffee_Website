@@ -11,48 +11,45 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <nav className="navbar-container">
-        <Link to="/" className="logo">
+        <div className="logo">
           <img src={LogoImage} alt="coffee Logo" className="logo-image" />
           <span className="logo-text">Coffee</span>
-        </Link>
+        </div>
 
         <div className={`nav-links ${isNavOpen ? "show" : ""}`}>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
+          <a href="#home" className={({ isActive }) => (isActive ? "active" : "")}>
             Home
-          </NavLink>
-          <NavLink
-            to="/about"
+          </a>
+          <a
+            href="#about"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             About
-          </NavLink>
-          <NavLink
-            to="/services"
+          </a>
+          <a
+            href="#services"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Services
-          </NavLink>
-          <NavLink
-            to="/why-us"
+          </a>
+          <a
+            href="#why-us"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Why Us
-          </NavLink>
-          <NavLink
-            to="/gallery"
+          </a>
+          <a
+            href="#gallery"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Gallery
-          </NavLink>
-          <NavLink
-            to="/contact"
+          </a>
+          <a
+            href="#contact"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Contact
-          </NavLink>
+          </a>
         </div>
 
         <div className="menu-icon-container">
