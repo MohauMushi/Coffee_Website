@@ -6,6 +6,7 @@ import Services from "./Components/Services/Services";
 import WhyUs from "./Components/WhyUs/WhyUs";
 import Gallery from "./Components/Gallery/Gallery";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <WhyUs />
         <Gallery />
         <Contact />
+        <Footer />
       </div>
     </>
   );
