@@ -1,4 +1,8 @@
 import React from "react";
+import { FaLocationCrosshairs } from "react-icons/fa6";
+import { MdEmail, MdAccessTimeFilled  } from "react-icons/md";
+import { BiSolidPhoneCall } from "react-icons/bi";
+
 import "./Contact.css";
 
 const Contact = () => {
@@ -22,14 +26,14 @@ const Contact = () => {
             </div>
             <div className="contact-info-side">
               <div className="location-container">
-                <img src="" className="location-logo" />
+                <FaLocationCrosshairs className="location-logo"/>
                 <div className="location">
                   <h3>Our Location</h3>
                   <p className="location-name">Rustenburg, Phokeng</p>
                 </div>
               </div>
               <div className="general-container">
-                <img src="" className="general-logo" />
+                <MdEmail className="general-logo" />
                 <div className="general">
                   <h3>General Enquires</h3>
                   <a
@@ -41,14 +45,14 @@ const Contact = () => {
                 </div>
               </div>
               <div className="call-us-container">
-                <img src="" className="call-us-logo" />
+                <BiSolidPhoneCall  className="call-us-logo" />
                 <div className="call-us">
                   <h3>Call Us</h3>
                   <a href="tel:014 547 2548">+27 14 547 2548</a>
                 </div>
               </div>
               <div className="timing-container">
-                <img src="" className="timing-logo" />
+                <MdAccessTimeFilled  className="timing-logo" />
                 <div className="timing">
                   <h3>Our Timing</h3>
                   <p className="time-frame">Mon - Sun : 9AM - 7PM</p>
